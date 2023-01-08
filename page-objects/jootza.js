@@ -4,10 +4,11 @@ const helpers = require("../runtime/helpers");
 /* eslint-disable no-undef */
 module.exports = {
 
-    url: 'http://www.jootza.com/login',
+    url: 'http://www.jootza.com/',
 
     elements: {
         Login: '//*[@id="bs-example-navbar-collapse-1"]/ul/li[2]/a',
+        Register: '/html/body/mdb-root/main/div/app-landing/div/div[1]/nav/div/div[2]/ul/li[1]/a'
         LoginHeader: '/html/body/mdb-root/main/div/app-login/header/section/div/div/div/div/div/div/div[1]/h2/strong',
         username: by.name('username'),
         password: by.name('password'),
@@ -25,7 +26,10 @@ module.exports = {
         // eslint-disable-next-line no-console
         var selector = page.jootza.elements[objectKey];
         await driver.sleep(2000);
-        return driver.findElement(By.xpath(selector)).click();
+        const exectedXPath = By.xpath(selector)
+        const ele = driver.findElement(executedXpath)
+        ele.click()
+        //return driver.findElement(By.xpath(selector)).click();
     },
     inputUserName: async function(val) {
         var selector = page.jootza.elements['username']; 

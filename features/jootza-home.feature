@@ -1,10 +1,10 @@
 Feature: As a jootza customer, I want to be able to navigate to landing poage so that I can view product information
 
-  @jootza
+  @jootza @test
   Scenario: Customer is displayed with jootza.com landing page
     Given I am on the Jootza portal
     When I click on "Login"
-    Then I should see "LoginHeader"
+    Then I should see "Login"
 
   @jootza @jootzaLogin
   Scenario: Customer is displayed with jootza.com landing page and tries to login into the portal
