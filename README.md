@@ -4,4 +4,4 @@ cd clt-bdd-ui
 execute the below npm command
 npm install --chromedrsiver_skip_download=true
 execute the below command 
-node index.js -s ./step-definition
+node index.js -s ./step-definitions
