@@ -4,7 +4,7 @@ module.exports = function () {
         return helpers.loadPage(page.jootza.url);
     });
 
-    this.When(/^I click on "([^"]*)"$/, function (objectKey) {
+    this.When(/^I Click on "([^"]*)"$/, function (objectKey) {
         return page.jootza.clickElement(objectKey);
     });
 
@@ -15,7 +15,7 @@ module.exports = function () {
     this.When(/^I enter password "([^"]*)"$/, function(objKey1) {
         return page.jootza.inputPassword(objKey1);
     });
-    this.Then(/^I should see "([^"]*)"$/, function (objectKey) {
+    this.Then(/^I Should see "([^"]*)"$/, function (objectKey) {
         return page.jootza.elementExists(objectKey);
     });
 
