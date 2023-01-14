@@ -3,15 +3,18 @@ Feature: As a Noon customer, I want to be able to navigate to landing page so th
   @Noon @find
   Scenario: Customer is displayed with Noon.com landing page
     Given I am on the Noon portal
-    When I click on "Login"
-    Then I should see "LoginHeader"
+    When I click on "Signin"
+    Then I should see "emailtext"
+    And I should see "passwordtext"
 
  @Noon @NoonLoginin
   Scenario: Customer is displayed with Noon.com landing page and tries to login into the portal
     Given I am on the Noon portal
-    And I enter the inputs for login
-    And I click on "Login"
-    Then I should see "errorMessage"
+    When I click on "Signin"
+    And I enter userName "username"
+    And I enter userpassword "password"
+    And I click on "submitBtn"
+    Then I should see "welcomePrasanna"
 
   @Noon @NoonForgetpassword
   Scenario: Customer is displayed with Forget Password link
