@@ -17,19 +17,20 @@ Feature: As a naukri customer, I want to be able to navigate to landing page so 
     And I click on "submitBtn"
     Then I should see "Venkataprasad"
 
-  # @naukri @jobs
-  # Scenario: Customer is displayed with naukri.com landing page and tries to view jobs
-  #   Given I am on the naukri portal
-  #   Then I should see "Login"#   When I click on "Jobs"
-  #   Then I should see "emailtext"
-  #   And I enter userName "username"
-  #   And I enter userpassword "password"
-  #   And I click on "submitBtn"
-  #   Then I should see "Venkataprasad"
-  #   When I click on "Jobs"
-  #   Then I should see "RecommendedJobsforYou"
+  @naukri @naukrisignup
+  Scenario: Customer is displayed with naukri.com landing page
+    Given I am on the naukri portal
+    When I click on "Register"
+    Then I should see "Findajobandgrowyourcareer"
 
+  @naukri @jobs
+  Scenario: Customer is displayed with naukri.com landing page
+    Given I am on the naukri portal
+    When I click on "jobs"
+    Then I should see "Findyourdreamjobnow"
 
-
-
-
+   @naukri @companies
+  Scenario: Customer is displayed with naukri.com landing page
+    Given I am on the naukri portal
+    When I click on "companies"
+    Then I should see "Topcompanieshiringnow"

@@ -17,9 +17,13 @@ module.exports = {
         PasswordVal: 'Vharsha3#',
         submitBtn: '//*[@id="root"]/div[4]/div[2]/div/div/div[2]/div/form/div[6]/button',
         Venkataprasad: '//*[@id="root"]/div/div/span/div/div/div/div[2]/div/div[2]/div[1]/div/a[1]/div[2]/div[1]',
-        // Jobs: '//*[@id="root"]/div[3]/div[2]/nav/ul/li[1]/a/div',  
-        // RecommendedJobsforYou: '//*[@id="reco-header"]/div/span[1]',
-        },
+        Register: '//*[@id="register_Layer"]',
+        Findajobandgrowyourcareer: '//*[@id="root"]/div/div/div[2]/div/div/div[1]/h1',
+        jobs: '//*[@id="root"]/div[4]/div[2]/nav/ul/li[1]/a',
+        Findyourdreamjobnow: '//*[@id="root"]/div[5]/h1',
+        companies: '//*[@id="root"]/div[4]/div[2]/nav/ul/li[2]/a',
+        Topcompanieshiringnow: '//*[@id="root"]/div[5]/h1',
+    },
     content: {
         'Adams, Jimmy': 'Adams, Jimmy',
         'ADMIN, CLT': 'ADMIN, CLT'
@@ -64,5 +68,5 @@ module.exports = {
         var result = await driver.findElement(By.xpath(selector)).getAttribute("value");
         assert.equal(page.naukri.content[val], result);
     },
-    
+
 };

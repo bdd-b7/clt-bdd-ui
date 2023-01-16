@@ -11,7 +11,7 @@ module.exports = function () {
     this.When(/^I enter userName "([^"]*)"$/, function (objKey1) {
         return page.naukri.inputUserName(objKey1);
     });
-    
+
     this.When(/^I enter userpassword "([^"]*)"$/, function (objKey1) {
         return page.naukri.inputPassword(objKey1);
     });
@@ -34,4 +34,4 @@ module.exports = function () {
         await driver.sleep(3000);
         return;
     });
-    };
+};
