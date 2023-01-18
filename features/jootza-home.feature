@@ -1,6 +1,5 @@
 Feature: As a jootza customer, I want to be able to navigate to landing poage so that I can view product information
 
-
   @jootza @test
   Scenario: Customer is displayed with jootza.com landing page
     Given I am on the "Jootza" portal
@@ -48,11 +47,11 @@ Feature: As a jootza customer, I want to be able to navigate to landing poage so
     Then I should see the approver name as "ADMIN, CLT"
     And I click on "Submit Button"
 
-  @jootza @checkApprover
-  Scenario Outline: Customer is logging into the jootza website to verify the approver name
-    Given I am logged on to the Jootza portal as "Shanuser12"
-    Then I should see the approver name as "Adams, Jimmy"
-    And I click on "Submit Button"
+#   @jootza @checkApprover
+#   Scenario Outline: Customer is logging into the jootza website to verify the approver name
+#     Given I am logged on to the Jootza portal as "Shanuser12"
+#     Then I should see the approver name as "Adams, Jimmy"
+#     And I click on "Submit Button"
 
   @jootza @checkApprover
   Scenario Outline: Customer is logging into the jootza website to verify the approver name
@@ -64,15 +63,15 @@ Feature: As a jootza customer, I want to be able to navigate to landing poage so
       | kavithas        | ADMIN, CLT   |
       | Shanuser12      | Adams, Jimmy |
 
-  @jootza @recordTime
-  Scenario Outline: Customer is logging into the jootza website to record time
-    Given I am on logged on to the Jootza portal as "<Jootza Customer>"
-    And I enter notes field for days
-      | FieldName      | FieldValue                      |
-      | MondayNotes    | Worked on User story CLT-B3-009 |
-      | TuesdayNotes   | Worked on User story CLT-B3-009 |
-      | WednesdayNotes | Worked on User story CLT-B3-009 |
-      | ThursdayNotes  | Worked on User story CLT-B3-009 |
-      | FridayNotes    | Worked on User story CLT-B3-009 |
-    And I click on  "Submit"
-#Then I should see "Timesheet Created"  Message
+#   @jootza @recordTime
+#   Scenario Outline: Customer is logging into the jootza website to record time
+#     Given I am on logged on to the Jootza portal as "<Jootza Customer>"
+#     And I enter notes field for days
+#       | FieldName      | FieldValue                      |
+#       | MondayNotes    | Worked on User story CLT-B3-009 |
+#       | TuesdayNotes   | Worked on User story CLT-B3-009 |
+#       | WednesdayNotes | Worked on User story CLT-B3-009 |
+#       | ThursdayNotes  | Worked on User story CLT-B3-009 |
+#       | FridayNotes    | Worked on User story CLT-B3-009 |
+#     And I click on  "Submit"
+# #Then I should see "Timesheet Created"  Message

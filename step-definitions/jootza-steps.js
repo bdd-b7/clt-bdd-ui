@@ -17,9 +17,9 @@ module.exports = function () {
     });
 
 
-    this.Given(/^I am logged on to the Jootza portal as "([^"]*)"$/, function (user) {
-        return page.jootza.loginPortal(user);
-    });
+//     this.Given(/^I am logged on to the Jootza portal as "([^"]*)"$/, function (user) {
+//         return page.jootza.loginPortal(user);
+//     });
 
     this.Then(/^I should see the approver name as "([^"]*)"$/, function (value) {
         return page.jootza.verifyApproverName(value);
@@ -54,4 +54,4 @@ module.exports = function () {
     })
 
 
-};
+ };

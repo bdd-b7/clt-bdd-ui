@@ -1,7 +1,7 @@
 const { assert } = require("chai");
 const helpers = require("../runtime/helpers");
 
-/* eslint-disable no-undef */
+// /* eslint-disable no-undef */
 module.exports = {
 
     url: 'http://www.jootza.com/login', // url for jootza
@@ -39,11 +39,11 @@ module.exports = {
         await driver.sleep(2000);
         return driver.findElement(selector).sendKeys(val);
 
-    },
-    inputPassword: async function(val) {
-        var selector = page.jootza.elements['password']; 
-        await driver.sleep(2000);
-        return driver.findElement(selector).sendKeys(val);
+//     },
+//     inputPassword: async function(val) {
+//         var selector = page.jootza.elements['password']; 
+//         await driver.sleep(2000);
+//         return driver.findElement(selector).sendKeys(val);
 
     },
     
