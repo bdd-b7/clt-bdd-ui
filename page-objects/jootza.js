@@ -52,6 +52,7 @@ module.exports = {
         var selector = page.jootza.elements[objectKey];
 
         await driver.sleep(5000);
+       // driver.findElement(By.id("fruits"));
         return driver.findElement(By.xpath(selector));
     },
     loginPortal: async function(username) {
