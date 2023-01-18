@@ -1,8 +1,8 @@
-// const { assert } = require("chai");
-// const helpers = require("../runtime/helpers");
+const { assert } = require("chai");
+const helpers = require("../runtime/helpers");
 
 // /* eslint-disable no-undef */
-// module.exports = {
+module.exports = {
 
     url: 'http://www.jootza.com/login', // url for jootza
 
