@@ -35,6 +35,4 @@ module.exports = function () {
         await driver.sleep(3000);
         return;
     });
-
-
 };

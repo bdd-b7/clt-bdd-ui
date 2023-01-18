@@ -1,6 +1,6 @@
 Feature: As a jootza customer, I want to be able to navigate to landing poage so that I can view product information
 
-  @jootza
+  @jootza  @test
   Scenario: Customer is displayed with jootza.com landing page
     Given I am on the Jootza portal
     When I click on "Login"
@@ -49,4 +49,4 @@ Feature: As a jootza customer, I want to be able to navigate to landing poage so
       | ThursdayNotes  | Worked on User story CLT-B3-009 |
       | FridayNotes    | Worked on User story CLT-B3-009 |
     And I click on  "Submit"
-#Then I should see "Timesheet Created"  Message
+Then I should see "Timesheet Created"  Message
