@@ -3,7 +3,6 @@ module.exports = function () {
     //Given I am on the "Jootza" portal
 
 
-    
 
     this.Given('I am on the Jootza portal', function () {
         return helpers.loadPage(page.jootza.url);
@@ -51,7 +50,6 @@ module.exports = function () {
         page.commonObjects.inputElement('password', password)
         page.commonObjects.clickElement('LoginBtn')
         await driver.sleep(2000); 
-
         return page.commonObjects.elementExists('WelcomeMessage')
     })
 
