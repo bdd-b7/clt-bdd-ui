@@ -1,13 +1,13 @@
 Feature: As a target customer, I want to be able to navigate to target landing page
 
-    @targetLogin
+    @targetLogin@test
     Scenario: Customer is displayed with target.com landing page
         Given I am on the target website
         When I click on "signInRegister" home link
         And I click on "signIn" link
         Then I should see "signInHeader"
 
-    @targetForgotPswd
+    @targetForgotPswd@test
     Scenario: Customer is displayed with target.com landing page and tries to click forgot password link
         Given I am on the target website
         When I click on "signInRegister" home link
@@ -15,7 +15,7 @@ Feature: As a target customer, I want to be able to navigate to target landing p
         And I click on "forgotPswd" target link
         Then I should see "forgotPswdHeader" header
 
-    @targetInvalidCredentials
+    @targetInvalidCredentials@test
     Scenario: Customer is displayed with target.com landing page and tries to login into the portal
         Given I am on the target website
         When I click on "signInRegister" home link
