@@ -2,7 +2,7 @@ module.exports = function () {
 
     //Given I am on the "Jootza" portal
 
-
+   
 
     this.Given('I am on the Jootza portal', function () {
         return helpers.loadPage(page.jootza.url);
