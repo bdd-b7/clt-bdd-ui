@@ -84,19 +84,19 @@ module.exports = function () {
         return page.target.elementExists(objectKey) 
     });
 
-    // //And I click on search "productLink"
+    //And I click on search "productLink"
     // this.When(/^I click on search "([^"]*)"$/, function(objectKey) {
     //     return page.target.clickElement(objectKey)
     // });
 
-    // //And I click on "addCart" button
-    // this.When(/^I click on "([^"]*)" button$/, function(button) {
-    //     return page.target.loginPortal(button);
+    //And I click on "addCart" button
+    // this.When(/^I click on "([^"]*)" button$/, function(button1) {
+    //     return page.target.loginPortal(button1);
     // });
 
-    // //Then I should see "addedMessage" popup
-    // this.Then(/^I should see "([^"]*)" popup$/, function(objectKey) {
-    //     return page.target.elementExists(objectKey) 
+    //Then I should see "addedMessage" headertext
+    // this.Then(/^I should see "([^"]*)" headertext$/, function(objectKey1) {
+    //     return page.target.elementExists(objectKey1) 
     // });
 
 }

@@ -17,9 +17,9 @@ module.exports = {
         searchText : by.name('searchTerm'),
         search : '//*[@id="headerPrimary"]/div[6]/form/button[2]',
         productResults : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/h2',
-        // productLink : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/section/div/div[2]/div/div/div[1]/div[2]/div/div/div[1]/div[1]/div[1]/a',
-        // addCart : '//*[@id="addToCartButtonOrTextIdFor54191097"]',
-        // addedMessage : '/html/body/div[28]/div/div/div[1]/div/div[1]/h2/span[2]',
+        //productLink : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/section/div/div[2]/div/div/div[1]/div[2]/div/div/div[1]/div[1]/div[1]/a',
+        addCart : '//*[@id="addToCartButtonOrTextIdFor54191097"]',
+        //addedMessage : '/html/body/div[31]/div/div/div[1]/div/div[1]/h2/span[2]',
      },
 
     clickElement: async function(objectKey) {
@@ -42,7 +42,7 @@ module.exports = {
                         
     loginPortal: async function(button1) {
         var selector = page.target.elements[button1];
-        await driver.sleep(2000);
+        await driver.sleep(3000);
         return driver.findElement(By.xpath(selector)).click();
         },
 
