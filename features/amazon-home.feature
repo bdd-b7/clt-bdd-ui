@@ -11,7 +11,7 @@ Feature: As a customer, I am able to view Amazon home page and access the option
     Scenario: Customer is displayed with amazon home page and tries to login with valid input
         Given I am on the amazon page
         When I click on the "signin"
-        And I enter the inputs for login
+        And I enter the login inputs
             | InputName | InputValue                   |
             | email     | Malathi.karmugelan@gmail.com |
         And I click on the "Continue"
@@ -26,7 +26,7 @@ Feature: As a customer, I am able to view Amazon home page and access the option
         Given I am on the amazon page
         When I click on the "signin"
         And I click on the "Createnewaccount"
-        And I enter the inputs for login
+        And I enter the login inputs
             | InputName     | InputValue                   |
             | customerName  | Deekshu                      |
             | email         | Malathi.karmugelan@gmail.com |

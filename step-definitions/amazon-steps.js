@@ -13,7 +13,7 @@ module.exports = function () {
     this.Then(/^I should see a "([^"]*)"$/, function (objectKey1) {
         return page.amazon.elementExists1(objectKey1);
     });
-    this.When(/^I enter the inputs for login$/, async function (table) {
+    this.When(/^I enter the login inputs$/, async function (table) {
         const fields = table.rows();
         console.log(fields);
         for (i = 0; i < fields.length; i++) {
@@ -22,4 +22,10 @@ module.exports = function () {
         await driver.sleep(3000);
         return;
     });
-}
+    this.When(/^I click on the "([^"]*)" and enter "([^"]*)"$/, async function (search,input) {
+        return page.amazon.inputElement1(search,input);
+    });
+    this.Given(/^I Signed in Amazon Website as "([^"]*)" and "([^"]*)"$/, function (email,passw) {
+        return page.amazon.loginPortal(email,passw);
+    });
+};
