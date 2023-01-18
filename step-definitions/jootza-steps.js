@@ -4,6 +4,7 @@ module.exports = function () {
 
 
     
+
     this.Given('I am on the Jootza portal', function () {
         return helpers.loadPage(page.jootza.url);
     });
