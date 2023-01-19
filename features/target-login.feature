@@ -1,5 +1,5 @@
 Feature: As a target customer, I want to be able to navigate to target landing page
-
+#for target website
     @targetLogin
     Scenario: Customer is displayed with target.com landing page
         Given I am on the target website
