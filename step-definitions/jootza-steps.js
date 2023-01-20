@@ -1,6 +1,6 @@
 module.exports = function () {
 
-    //Given I am on the "Jootza" portal
+    // Given I am on the "Jootza" portal
 
    
 
@@ -8,12 +8,19 @@ module.exports = function () {
         return helpers.loadPage(page.jootza.url);
     });
 
+    this.When(/^I Click on "([^"]*)"$/, function (objectKey) {
+        return page.jootza.clickElement(objectKey);
+    });
+
+    this.When(/^I enter username "([^"]*)"$/ , function(objKey1) {
+        return page.jootza.inputUserName(objKey1);
+    });
+
     this.When(/^I enter password "([^"]*)"$/, function(objKey1) {
         return page.jootza.inputPassword(objKey1);
     });
-
-    this.When(/^I enter username "([^"]*)"$/, function(objKey1) {
-        return page.jootza.inputUserName(objKey1);
+    this.Then(/^I Should see "([^"]*)"$/, function (objectKey) {
+        return page.jootza.elementExists(objectKey);
     });
 
 

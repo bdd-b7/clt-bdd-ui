@@ -35,5 +35,15 @@
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "selenium-cucumber-js": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasgithub1/clt-bdd-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prasgithub1/clt-bdd-ui/issues"
+  },
+  "homepage": "https://github.com/Prasgithub1/clt-bdd-ui#readme"
 }
