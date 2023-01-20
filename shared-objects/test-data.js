@@ -1,4 +1,5 @@
 module.exports = {
-    username: "import-test-user",
-    password: "import-test-pa**word"
+    signInName: "import-test-user",
+    password: "import-test-pa**word",
+
 };
