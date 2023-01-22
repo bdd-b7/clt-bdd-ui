@@ -85,18 +85,18 @@ module.exports = function () {
     });
 
     //And I click on search "productLink"
-    // this.When(/^I click on search "([^"]*)"$/, function(objectKey) {
-    //     return page.target.clickElement(objectKey)
-    // });
+    this.When(/^I click on search "([^"]*)"$/, function(objectKey) {
+        return page.target.clickElement(objectKey)
+    });
 
     //And I click on "addCart" button
-    // this.When(/^I click on "([^"]*)" button$/, function(button1) {
-    //     return page.target.loginPortal(button1);
-    // });
+    this.When(/^I click on "([^"]*)" button$/, function(button1) {
+        return page.target.loginPortal(button1);
+    });
 
     //Then I should see "addedMessage" headertext
-    // this.Then(/^I should see "([^"]*)" headertext$/, function(objectKey1) {
-    //     return page.target.elementExists(objectKey1) 
-    // });
+    this.Then(/^I should see "([^"]*)" headertext$/, function(objKey) {
+        return page.target.elementExists(objKey) 
+    });
 
 }

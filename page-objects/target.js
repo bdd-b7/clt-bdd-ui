@@ -17,9 +17,9 @@ module.exports = {
         searchText : by.name('searchTerm'),
         search : '//*[@id="headerPrimary"]/div[6]/form/button[2]',
         productResults : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/div[1]/h2',
-        //productLink : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/section/div/div[2]/div/div/div[1]/div[2]/div/div/div[1]/div[1]/div[1]/a',
+        productLink : '//*[@id="pageBodyContainer"]/div[1]/div/div[4]/div/div[1]/div[2]/div/section/div/div[1]/div/div/div[1]/div[2]/div/div/div[1]/div[1]/div[1]/a',
         addCart : '//*[@id="addToCartButtonOrTextIdFor54191097"]',
-        //addedMessage : '/html/body/div[31]/div/div/div[1]/div/div[1]/h2/span[2]',
+        addedMessage : '//*[@id="__next"]',
      },
 
     clickElement: async function(objectKey) {

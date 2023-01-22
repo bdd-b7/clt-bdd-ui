@@ -29,7 +29,7 @@ Feature: As a target customer, I want to be able to navigate to target landing p
         And I click on "loginButton"
         Then I should get "errorMessage"
 
-    @targetValidCredentials
+    @targetValidCredentials@test
     Scenario: Customer is displayed with target.com landing page and tries to login into the portal
         Given I am on the target website
         When I click on "signInRegister" home link
@@ -43,7 +43,7 @@ Feature: As a target customer, I want to be able to navigate to target landing p
         And I click on "loginButton"
         Then I should get "welcomeMessage" homepage
 
-    @targetSearchProduct@test
+    @targetSearchProduct
     Scenario: Customer is displayed with target.com landing page and tries to search the product
         Given I am on the target website
         When I click on "searchClick" box
@@ -52,9 +52,11 @@ Feature: As a target customer, I want to be able to navigate to target landing p
             | searchText | airpod     |
         And I click on "search" icon
         Then I should see "productResults" for search term
-        #And I click on search "productLink"
-        #And I click on "addCart" button
-        #Then I should see "addedMessage" headertext
+        And I click on search "productLink"
+        And I click on "addCart" button
+        Then I should see "addedMessage" headertext
+
+    
 
 
 
