@@ -17,7 +17,7 @@ module.exports = {
         submitBtn: '',
         approverName : '//*[@id="info"]/div[1]/div[3]/div/input'
     },
-    content : {
+    content : { //comment//
         'Adams, Jimmy': 'Adams, Jimmy',
         'ADMIN, CLT' : 'ADMIN, CLT'
     },
@@ -40,6 +40,7 @@ module.exports = {
 
     },
     inputElement: async function(name,val) {
+        // want to change
         var selector = page.jootza.elements[name]; 
         await driver.sleep(2000);
         return driver.findElement(selector).sendKeys(val);
