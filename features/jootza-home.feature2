@@ -1,0 +1,40 @@
+Feature: As a jootza customer, I want to be able to navigate to landing poage so that I can view product information
+
+  @jootza @test
+
+  Scenario: Customer is displayed with jootza.com landing page
+    Given I am on the Jootza portal
+    When I click on "Login"
+    Then I should see "LoginHeader"
+
+  @jootza @jootzaLogin
+  Scenario: Customer is displayed with jootza.com landing page and tries to login into the portal s
+    Given I am on the Jootza portal Page
+    And when I enter the inputs for login
+      | InputName | InputValue  |
+      | username  | Sunitha   |
+      | password  | password012|
+    And I click on "LoginBtn"
+    Then I should see "error Message"
+
+      @jootza @checkApprover
+  Scenario Outline: Customer is logging into the jootza website to verify the approver name
+    Given I am logged on to the Jootza portal as "Sunitha"
+    Then I should see the approver name as "ADMIN, CLT"
+    And I click on "Submit Button"
+
+  @jootza @checkApprover
+  Scenario Outline: Customer is logging into the jootza website to verify the approver name
+    Given I am logged on to the Jootza portal as "Sam12"
+    Then I should see the approver name as "Raja, Ravi"
+    And I click on "Submit Button"
+
+  @jootza @checkApprover
+  Scenario Outline: Customer is logging into the jootza website to verify the approver name
+    Given I am logged on to the Jootza portal as "<Jootza Customer>"
+    Then I should see the approver name as "<approverName>"
+    And I click on "Submit Button"
+    Examples:
+      | Jootza Customer | approverName|
+      | Sunitha        | ADMIN, CLT   |
+      | Sam12     | Raja, Ravi | 
